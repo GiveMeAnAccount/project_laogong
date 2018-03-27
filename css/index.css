@@ -2,6 +2,7 @@
 ul li{list-style:none}
 img{vertical-align:top;border:none}
 html{font-size: 10px;}
+body { padding-top: 115px; }
 .border{border:1px solid red }
 .wrap ,.wrap .navbar-brand{font-size: 1.2rem;height: 30px;}
 .wrap a{padding:0 15px;line-height: 30px;height: 30px;}
@@ -36,4 +37,7 @@ html{font-size: 10px;}
 .page span{border: 1px solid grey;width: 30px;height: 30px;border-radius: 50px;margin: 20px 4px;display: inline-block;line-height: 30px;color: #666;}
 .page span:last-child{font-weight: 700;line-height: 30px;}
 .page span:hover{border: 1px solid #8ECB3C;color: #8ECB3C;}
-
+.employment h3,.employment .button{padding:40px 0;}
+.employment h3 {color: #666;font-weight: 100;}
+.footer{padding:50px 0;}
+.footer span{padding:0 10px;}
