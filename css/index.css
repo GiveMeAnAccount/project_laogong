@@ -1,6 +1,7 @@
 *{margin:0;padding:0}
 ul li{list-style:none}
-
+a { color: #8ECB3C; text-decoration:none; }
+a:hover { color: #449d44; text-decoration:none; }
 html{font-size: 10px;}
 body { padding-top: 124px; }
 .border{border:1px solid red }
@@ -43,10 +44,15 @@ body { padding-top: 124px; }
 .footer span{padding:0 10px;}
 
 /* register页面css */
+.register {padding-bottom: 20px;}
 .register span{display: inline-block;}
 .register .title{color:#8ECB3C;}
-.register .form-row{margin: 30px auto;width:80%;}
-.register .form-row input ,.register .form-row button {width:100%;height: 44px;}
-/* .register .form-row input {width: 60%;} */
-/* .register .form-row .code{width: 40%;height:44px;border: 1px solid red;} */
-
+.register .form-row{margin:0 auto;margin-top: 40px;width:80%;}
+.register .form-row input {width:100%;height: 46px;border:1px solid #ddd;background-color:transparent;}
+.form-row input:focus {outline-color: #8ECB3C;}
+.register  img {margin-top: -2px; border: 1px solid #ddd;}
+.register  button{border-radius: 0;background-color: #8ECB3C;border-color:  #8ECB3C;}
+.register .agree {margin-top: 10px;}
+.register .agree input{height: 14px;width: 14px;vertical-align: middle;margin-top: -2px;}
+.register .agree input:focus{outline:none;}
+.register .agree ,.register .login{text-align: center;}
