@@ -24,9 +24,28 @@ $(document).ready(function () {
 	swiperButtonShow(".swiper-button-prev");
 	swiperButtonShow(".swiper-button-next");
 
-	// $(".roll li").fadeToggle("slow","linear",function () {
-	// 	$(".roll li").fadeToggle("slow","linear");
-	// });
-	// $(".roll li").slideDown("slow");
+	//register页面校验
+	//手机号校验
+	function isPoneAvailable($poneInput) {  
+        var myreg=/^[1][3,4,5,7,8][0-9]{9}$/;  
+        if (!myreg.test($poneInput.val())) {  
+            return false;  
+          	} else {  
+            return true;  
+          	}  
+      	}
+    console.log($(".phone")); 	
+    console.log($(".phone>input").attr("value"));
+    console.log($(".submit"));
+    $(".submit").click(function(){
+    	// console.log($(".phone>input").val())
+    	// console.log('111');
+    	isPoneAvailable($(".phone>input"));
+    	if (isPoneAvailable($(".phone>input"))) {
+    		$(".error").text("正确");
+    	} else {
+    		$(".error").text("请输入正确手机号");
+    	}
+    });
 })
 
